@@ -6,19 +6,19 @@ type Config struct {
 	ListenAddress string   `json:"listen"`
 	ServerAddress string   `json:"server"`
 	Nickname      string   `json:"nickname"`
-	BTC_Daemon    string   `json:"BTC_Daemon"`
-	BTC_Dir       string   `json:"BTC_Dir"`
-	BTC_Login     string   `json:"BTC_Login"`
-	LTC_Daemon    string   `json:"LTC_Daemon"`
-	LTC_Dir       string   `json:"LTC_Dir"`
-	LTC_Login     string   `json:"LTC_Login"`
-	ARRR_Daemon   string   `json:"ARRR_Daemon"`
-	ARRR_Dir      string   `json:"ARRR_Dir"`
-	Dero_Daemon   string   `json:"Dero_Daemon"`
+	BTC_Daemon    string   `json:"btc_daemon"`
+	BTC_Dir       string   `json:"btc_dir"`
+	BTC_Login     string   `json:"btc_login"`
+	LTC_Daemon    string   `json:"ltc_daemon"`
+	LTC_Dir       string   `json:"ltc_dir"`
+	LTC_Login     string   `json:"ltc_login"`
+	ARRR_Daemon   string   `json:"arrr_daemon"`
+	ARRR_Dir      string   `json:"arrr_dir"`
+	Dero_Daemon   string   `json:"dero_daemon"`
 	Dero_Wallet   string   `json:"dero_wallet"`
 	Dero_Login    string   `json:"dero_login"`
 	Monero_Daemon string   `json:"monero_daemon"`
-	Monero_Wallet string   `json:"Monero_Wallet"`
+	Monero_Wallet string   `json:"monero_wallet"`
 	Monero_Login  string   `json:"monero_login"`
 	Pairs         []string `json:"pairs"`
 	// dynamically updated
