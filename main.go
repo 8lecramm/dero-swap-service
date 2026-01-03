@@ -13,7 +13,7 @@ import (
 )
 
 func Version() {
-	log.Println("Dero Swap Service v0.8.5")
+	log.Println("Dero Swap Service v0.8.7")
 	log.Println("https://github.com/8lecramm/dero-swaps")
 }
 

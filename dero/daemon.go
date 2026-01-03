@@ -15,7 +15,7 @@ var Dero_Daemon jsonrpc.RPCClient
 func IsDeroAddressRegistered(address string) bool {
 
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
-	if result, err := Dero_Daemon.Call(ctx, "DERO.IsRegistered", &rpc.GetEncryptedBalance_Params{Address: address, SCID: crypto.ZEROHASH}); err != nil {
+	if result, err := Dero_Daemon.Call(ctx, "DERO.GetEncryptedBalance", &rpc.GetEncryptedBalance_Params{Address: address, SCID: crypto.ZEROHASH, TopoHeight: -1}); err != nil {
 		cancel()
 		log.Printf("Error checking registration status: %v\n", err)
 		return false
